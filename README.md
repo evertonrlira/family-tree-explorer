@@ -8,8 +8,8 @@
 	- Family-Tree-Web-App is a Solution where:
 		- Front-end was built using NextJS (Javascript)
 		- Back-end was built on ASP.NET Core, following Clean Architecture
-	- 'WEB' folder contains the frontend implementation.
-	- 'API' folder contains the backend implementation.
+	- 'WEB' folder contains the frontend implementation
+	- 'API' folder contains the backend implementation
 	
     - The 'src' subfolder contains the following project folders:
 		- 'FamilyTree.Api': Implementation of the api's outer layer (controllers)
@@ -21,20 +21,20 @@
 
 - Setup Instructions
     - The backend can be executed from Visual Studio with the following steps:
-	    1. Open the '.sln' file in 'API' folder.
+	    1. Open the '.sln' file in 'API' folder
 		2. Hit "start (without debug)"
 		
 	- The Frontend can be loaded with the following steps:
 		1. Open a command prompt (CMD)
 		2. Navigate to the 'WEB' folder
-		3. Run 'npm install'
+		3. Run 'npm install'. In case this fails due to conflicts with the local version of packs, run 'npm install --legacy-peer-deps'
 		4. After dependencies are installed, run 'npm run dev'
-		5. This should deploy the application. Please follow the url provided in a browser to navigate.
+		5. This should deploy the application. Please follow the url provided in a browser to navigate
 
 
 - Additional Remarks
-	- Persistence was done using SqlLite. The database is cleared and re-seeded every time the application is loaded.
+	- Persistence was done using SqlLite. The database is cleared and re-seeded every time the application is loaded
 	- The constant value for 'x-client-id' header was stored in setting files:
 		- "WEB\src\config\settings.js" for frontend
 		- "API\src\FamilyTree.Api\appsettings.json" for backend
-	- The expected base url for the backend api is also defined as a configuration setting on frontend.
+	- The expected base url for the backend api is also defined as a configuration setting on frontend
