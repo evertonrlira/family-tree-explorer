@@ -6,10 +6,10 @@
 
 - Structure 
 	- Family-Tree-Web-App is a Solution where:
-		- Front-end was built using NextJS (Javascript)
-		- Back-end was built on ASP.NET Core, following Clean Architecture
-	- 'WEB' folder contains the frontend implementation
-	- 'API' folder contains the backend implementation
+		- Frontend was built using NextJS (Javascript)
+		- Backend was built on ASP.NET Core, following Clean Architecture
+	- 'WEB' folder contains the Frontend implementation
+	- 'API' folder contains the Backend implementation
 	
     - The 'src' subfolder contains the following project folders:
 		- 'FamilyTree.Api': Implementation of the api's outer layer (controllers)
@@ -20,8 +20,8 @@
 
 
 - Setup Instructions
-    - The backend can be executed from Visual Studio with the following steps:
-	    1. Open the '.sln' file in 'API' folder
+	- The Backend can be executed from Visual Studio with the following steps:
+		1. Open the '.sln' file in 'API' folder
 		2. Hit "start (without debug)"
 		
 	- The Frontend can be loaded with the following steps:
@@ -35,6 +35,6 @@
 - Additional Remarks
 	- Persistence was done using SqlLite. The database is cleared and re-seeded every time the application is loaded
 	- The constant value for 'x-client-id' header was stored in setting files:
-		- "WEB\src\config\settings.js" for frontend
-		- "API\src\FamilyTree.Api\appsettings.json" for backend
-	- The expected base url for the backend api is also defined as a configuration setting on frontend
+		- "WEB\src\config\settings.js" for Frontend
+		- "API\src\FamilyTree.Api\appsettings.json" for Backend
+	- The expected base url for the Backend api is also defined as a configuration setting on Frontend
